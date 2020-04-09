@@ -14,6 +14,7 @@
 //===========================================================//
 
 #import "SKXMLDictionaryParser.h"
+#import "NSData+MBData.h"
 
 @interface SKXMLDictionaryParser ()<NSXMLParserDelegate>
 
@@ -27,7 +28,8 @@
 
 - (instancetype)initWithData:(NSData *)data {
     self = super.init;
-    NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
+    NSData *utf8Data = [data UTF8Data];
+    NSXMLParser *parser = [[NSXMLParser alloc] initWithData:utf8Data];
     [parser setDelegate:self];
     [parser parse];
     return self;

